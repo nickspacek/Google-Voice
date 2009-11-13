@@ -1,0 +1,58 @@
+NAME
+    Google::Voice - Interface to Google Voice.
+
+SYNOPSIS
+        use Google::Voice;
+
+        my $gv = Google::Voice->new;
+        die 'Couldn't login to Google Voice.'
+            unless $gv->login( 'email', 'password' );
+
+        my $number = '15551234567';
+        my $message = 'message';
+
+        # There is no error reporting yet.
+        print 'Message sent!' if $gv->send_sms( $number, $message );
+
+DESCRIPTION
+    Google::Voice provides a simple API for Google Voice.
+
+    Current features:
+
+    *   Send SMS
+
+    *   Fetch raw feeds
+
+    Future features:
+
+    *   Download voicemail/messages
+
+    *   Change settings
+
+    *   Make calls
+
+        This module is based on the Python library, PyGoogleVoice
+        (http://code.google.com/p/pygooglevoice/).
+
+AUTHOR
+        Nick Spacek
+        nick.spacek@gmail.com
+        http://identi.ca/nickspacek
+
+COPYRIGHT
+    This program is free software; you can redistribute it and/or modify it
+    under the same terms as Perl itself.
+
+    The full text of the license can be found in the LICENSE file included
+    with this module.
+
+SEE ALSO
+    perl(1).
+
+POD ERRORS
+    Hey! The above document had some coding errors, which are explained
+    below:
+
+    Around line 66:
+        You forgot a '=back' before '=head1'
+

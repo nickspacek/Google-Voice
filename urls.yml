@@ -1,0 +1,66 @@
+---
+
+base_url: https://www.google.com/voice/
+pages:
+  login:
+    url: https://www.google.com/accounts/ServiceLoginAuth?service=grandcentral
+  logout:
+    url: account/signout
+  inbox:
+    url: '#inbox'
+  sms:
+    url: sms/send/
+    needs_special: 1
+  call:
+    url: call/connect/
+    needs_special: 1
+  cancel:
+    url: call/cancel/
+    needs_special: 1
+  default_forward:
+    url: settings/editDefaultForwarding/
+    needs_special: 1
+  forward:
+    url: settings/editForwarding/
+    needs_special: 1
+  delete:
+    url: inbox/deleteMessages/
+    needs_special: 1
+  star:
+    url: inbox/star/
+    needs_special: 1
+  download:
+    url: media/send_voicemail/
+    needs_special: 1
+  balance:
+    url: settings/billingcredit/
+    needs_special: 1
+  xml_search:
+    url: inbox/search
+  xml_contacts:
+    url: contacts/
+  xml_recent:
+    url: inbox/recent/
+  xml_inbox:
+    url: inbox/recent/inbox/
+  xml_starred:
+    url: inbox/recent/starred/
+  xml_all:
+    url: inbox/recent/all/
+  xml_spam:
+    url: inbox/recent/spam/
+  xml_trash:
+    url: inbox/recent/trash/
+  xml_voicemail:
+    url: inbox/recent/voicemail/
+  xml_sms:
+    url: inbox/recent/sms/
+  xml_recorded:
+    url: inbox/recent/recorded/
+  xml_placed:
+    url: inbox/recent/placed/
+  xml_received:
+    url: inbox/recent/received/
+  xml_missed:
+    url: inbox/recent/missed/
+

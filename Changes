@@ -1,0 +1,6 @@
+Revision history for Perl module Google::Voice
+
+0.01 Fri Nov 13 08:13:43 2009
+    - original version; supports send_sms, retrieval of raw feeds
+
+
